@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-W4R+PCgngZL56IhSUE/1Pxi2YhmqO5AmNCF3L1ktjtkxlCCteV/CtbNyi6ZiD6MtBSk9zSeK1vZKfoKofvKdAg==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="principal.css">
+    <link rel="stylesheet" href="botao.css">
+    <link rel="stylesheet" href="registros.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="chat.css">
+    <script src="script.js" defer></script>
+    <title>CCB - Central</title>
+</head>
+
+<body>
+    <header>
+        
+        <h1 class="header-title">Recitativos - CCB</h1>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main>
+        <button type="button" class="button blue mobile" id="cadastrarCliente">
+            <i class="fa-solid fa-plus fa-fade"></i> Adicionar Recitativo
+        </button>        
+
+        <table id="tableClient" class="records">
+            <p id="contadorRegistros">0 recitativos adicionados</p>
+
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Livro</th>
+                    <th>Capítulo</th>
+                    <th>Data</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Recitativo</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+
+                    
+                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome"
+                        required>
+
+                    <input type="text" id="livro" class="modal-field" placeholder="Livro" required>
+
+                    <input type="number" id="capitulo" class="modal-field" placeholder="Capítulo" required>
+
+                    <input type="number" id="versiculo" class="modal-field" placeholder="Versículo" required>
+                    
+                    <input type="date" id="data" class="modal-field" placeholder="Data" required>
+
+                    <label for="auxiliar">Auxiliar</label>
+                        <select id="auxiliar" class="modal-field">
+                            <option value="none">Nenhum</option>
+                            <option value="aline">Aline Gomes Santos</option>
+                            <option value="alfredo">Alfredo Bruske Schuster</option>
+                            <option value="alef">Alef Vinicius</option>
+                            <option value="jose">José Victor Zeller Gonçalves</option>
+                            <option value="jonas">Jonas Amorim Lopes da Silva</option>
+                            <option value="loraine">Loraine de Assis Souza</option>
+                            <option value="natalia">Natália de Sena Marques</option>
+                        </select>
+
+                    
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy; Matheus Lucindo🙂
+    </footer>
+</body>
+
+</html>

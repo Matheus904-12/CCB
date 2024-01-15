@@ -1,0 +1,102 @@
+@media (max-width: 480px) {
+    header {
+        position: fixed;
+        width: 100%;
+        background-color: var(--primary-color);
+        z-index: 1000;
+    }
+
+    .header-title {
+        font-size: 1.5rem;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .button.mobile {
+        font-size: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: fixed;
+        top: 90vh;
+        left: 80vw;
+        background-color: var(--primary-color);
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1001;
+    }
+
+    .button.mobile img {
+        width: 60%;
+        height: 60%;
+        filter: invert(1);
+    }
+
+    .records th.mobile,
+    .records td.mobile {
+        display: none;
+    }
+
+    .records tr {
+        border-radius: 10px;
+        display: block;
+        margin-bottom: 20px;
+        border: 2px solid #ccc;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        paright: 15px;
+    }
+
+    .records td {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+
+    .records th:last-child,
+    .records td:last-child {
+        padding: 0;
+        min-width: 140px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .modal {
+        top: 100%;
+        transition: all 1s ease;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal.active {
+        top: 0;
+    }
+
+    .modal-content {
+        margin: 0;
+        width: 90%;
+        max-width: 400px;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 20px;
+        position: relative;
+    }
+
+    .modal-field {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+}

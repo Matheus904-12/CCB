@@ -1,0 +1,53 @@
+.button{
+    border-style: none;
+    height: 40px;
+    padding: 6px 12px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: box-shadow .6s ease;
+    border-radius: 10px;
+}
+
+.button.blue{
+    background-color: #bdbd00;
+}
+
+button.green{
+    background-color: #13CE66;
+}
+
+button.red{
+    background-color: #FF4949;
+}
+
+.button:hover{
+    box-shadow: inset 200px 0 0 #00000055;
+}
+
+/* Estilização da barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #dbc834; /* Cor do polegar da barra de rolagem */
+    border-radius: 100px; /* Borda do polegar da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #bdbd00; /* Cor do polegar da barra de rolagem ao passar o mouse sobre ele */
+}
+
+#contadorRegistros {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #bdbd00;
+    margin-top: 10px;
+}
